@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:minHeight="?android:attr/actionBarSize"
+       android:paddingStart="16dp"
+       android:paddingEnd="16dp"
+       android:clipToPadding="false"
+       android:transitionGroup="true"
+       tools:ignore="UnusedAttribute,NewApi">
+      <EditText
+          android:id="@+id/edit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="请输入日期:例如20160101"
+          android:maxLength="8"
+          android:imeOptions="actionNext"
+          android:inputType="number"
+          android:textSize="18sp" />
+   </android.support.design.widget.TextInputLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+      android:orientation="horizontal"
+       android:layout_height="50dp">
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_gravity="center"
+          android:layout_height="match_parent"
+          android:layout_weight="1">
+         <Button
+             android:id="@+id/qvxiao"
+             android:background="@drawable/bg_back"
+             android:textColor="@color/white"
+             android:layout_centerInParent="true"
+             android:layout_gravity="center"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:text="取消"/>
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_gravity="center"
+          android:layout_width="0dp"
+          android:layout_height="40dp"
+          android:layout_weight="1">
+         <Button
+             android:id="@+id/queding"
+             android:textColor="@color/white"
+             android:background="@drawable/bg_back"
+             android:layout_centerInParent="true"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:text="确定"/>
+      </RelativeLayout>
+
+   </LinearLayout>
+</LinearLayout>
